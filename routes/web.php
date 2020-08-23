@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'UrlController@index')->name('index');
+Route::get('/clock', 'UrlController@clock')->name('clock');
